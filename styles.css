@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+*,:after,:before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #171c28;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5;
+    width: 100%
+}
+
+.introducao_ola {
+    font-weight: 550;
+}
+.introducao_meio {
+    font-weight: 300; 
+}
+.nome {
+    font-weight: 550; 
+}
+
+a {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    font-weight: 700;
+    color: inherit
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+
+
+.section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 100px 170px
+}
+
+@media screen and (max-width: 1280px) {
+    .section {
+        padding:100px
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .section {
+        padding:50px
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        display:block
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section {
+        padding:50px 35px
+    }
+}
+
+.section_titulo{
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 200px;
+    margin-right: 70px;
+    color: #007bff;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: 700;
+    letter-spacing: 2px
+}
+
+@media screen and (max-width: 1024px) {
+    .section_titulo {
+        margin-right:50px
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .section_titulo {
+        width:150px
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section_titulo {
+        text-align:left;
+        width: auto
+    }
+}
+
+.section_conteudo {
+    font-weight: 300;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 650px
+}
+
+@media screen and (max-width: 768px) {
+    .section_conteudo {
+        padding-top:30px;
+        padding-left: 50px
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section_conteudo {
+        padding-left:30px
+    }
+}
+
+.section_conteudo p {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.section_conteudo .underline-link {
+    position: relative;
+    display: inline-block
+}
+
+.section_conteudo .underline-link:after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    content: '';
+    opacity: 0;
+    -webkit-transition: height .3s,opacity .3s,-webkit-transform .3s;
+    transition: height .3s,opacity .3s,-webkit-transform .3s;
+    transition: height .3s,opacity .3s,transform .3s;
+    transition: height .3s,opacity .3s,transform .3s,-webkit-transform .3s;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px)
+}
+
+.section_conteudo .underline-link:focus:after,.section_conteudo .underline-link:hover:after {
+    height: 2px;
+    border-radius: 3px;
+    opacity: 1;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px)
+}
+
+
+
+
+.introducao {
+    padding: 120px 100px;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    max-width: 1440px;
+    margin: 0 auto
+}
+
+@media screen and (max-width: 630px) {
+    .introducao {
+        padding:120px 70px
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .introducao {
+        padding:120px 50px
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .introducao {
+        padding:70px 50px
+    }
+}
+
+.introducao_ola,.introducao_meio {
+    font-size: 2.5rem
+}
+
+@media screen and (max-width: 1024px) {
+    .introducao_ola,.introducao_meio {
+        font-size:2.25rem
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .introducao_ola,.introducao_meio {
+        font-size:2rem
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .introducao_ola,.introducao_meio {
+        font-size:1.75rem
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .introducao_ola,.introducao_meio {
+        font-size:1.5rem
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .introducao_ola,.introducao_meio {
+        font-size:1.4rem
+    }
+}
+
+.introducao_ola .emoji,.introducao_meio .emoji {
+    width: 40px;
+    height: 40px
+}
+
+@media screen and (max-width: 1024px) {
+    .introducao_ola .emoji,.introducao_meio .emoji {
+        width:35px;
+        height: 35px
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .introducao_ola .emoji,.introducao_meio .emoji {
+        width:30px;
+        height: 30px
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .introducao_ola .emoji,.introducao_meio .emoji {
+        width:25px;
+        height: 25px
+    }
+}
+
+.introducao_ola {
+    font-weight: 300
+}
+
+.introducao_meio {
+    font-weight: 300;
+    max-width: 700px
+}
+
+.introducao_meio .nome {
+    font-weight: 700
+}
+
+.introducao_meio .technologist {
+    background-image: url(../img/emojis/technologist.png)
+}
+
+.introducao_contato {
+    font-size: 1.25rem;
+    font-weight: 400
+}
+
+@media screen and (max-width: 550px) {
+    .introducao_contato {
+        font-size:1rem
+    }
+}
+
+.introducao_contato .highlight-link {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 3px;
+    text-decoration: none;
+    -webkit-box-shadow: inset 0 -3px 0 #007bff;
+    box-shadow: inset 0 -3px 0 #007bff
+}
+
+.introducao_contato .highlight-link:hover {
+    -webkit-box-shadow: inset 0 -33px 0 0 #007bff;
+    box-shadow: inset 0 -33px 0 0 #007bff;
+    color: #fff
+}
+
+.habilidadez {
+    margin-bottom: 40px;
+}
+
+.habilidadez .habilidades {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+@media screen and (max-width: 630px) {
+    .habilidadez .habilidades {
+        -ms-flex-wrap:wrap;
+        flex-wrap: wrap
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .habilidadez .habilidades_categoria {
+        width:47%;
+        margin-right: 5px;
+        margin-bottom: 25px
+    }
+}
+
+.habilidadez .habilidades_categoria_tipo {
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase
+}
+
+.habilidadez .habilidades_lista_item {
+    margin: 3px 0;
+    font-size: .9rem
+}
+
+.projetos .projeto_nome {
+    margin-bottom: 10px
+}
+
+.projetos .projeto_nome a {
+    font-weight: 700
+}
+
+.projetos .projeto p {
+    font-size: .85rem;
+    line-height: 1.3
+}
+
+.projetos .projeto {
+    max-width: 600px;
+    margin-bottom: 50px
+}
+
+.projetos .projeto_nome {
+    margin-bottom: 10px
+}
+
+.projetos .projeto p {
+    font-size: .9rem;
+    margin-bottom: 20px
+}
+
+.projetos .project__used__item {
+    display: inline-block;
+    margin: 3px 3px 3px 0;
+    font-family: Inconsolata,monospace;
+    font-size: .75rem;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 3px;
+    color: #007bff;
+    border: 1px solid #007bff;
+    background: 0 0
+}
+
+.projetos .project__used__item:first-of-type {
+    margin-left: 0
+}
+
+.footer {
+    padding: 50px 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        padding:50px
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .footer {
+        display:block
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        padding:50px 30px
+    }
+}
+
+.footer__copyright {
+    font-weight: 700;
+    width: 200px
+}
+
+@media screen and (max-width: 630px) {
+    .footer_copyright {
+        width:auto;
+        text-align: center;
+        margin-bottom: 25px
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .footer__copyright .baixo,.footer__copyright .cima {
+        display:inline-block
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer__copyright .baixo,.footer__copyright .cima {
+        display:block
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .footer_links {
+        display:-webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+}
+
+.footer_links a {
+    position: relative;
+    display: inline-block;
+    color: #007bff!important;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 15px;
+    outline: 0
+}
+
+@media screen and (max-width: 1024px) {
+    .footer_links a {
+        margin:0 10px
+    }
+}
+
+.footer_links a:after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #007bff;
+    content: '';
+    opacity: 0;
+    -webkit-transition: height .3s,opacity .3s,-webkit-transform .3s;
+    transition: height .3s,opacity .3s,-webkit-transform .3s;
+    transition: height .3s,opacity .3s,transform .3s;
+    transition: height .3s,opacity .3s,transform .3s,-webkit-transform .3s;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px)
+}
+
+@media screen and (max-width: 850px) {
+    .footer_links a:after {
+        display:none
+    }
+}
+
+.footer_links a:focus:after,.footer_links a:hover:after {
+    height: 2px;
+    border-radius: 3px;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+}
+
+.footer_links a .texto {
+    font-size: .9rem;
+    display: inline;
+    letter-spacing: 1px
+}
+
+@media screen and (max-width: 850px) {
+    .footer_links a .texto {
+        display:none
+    }
+}
